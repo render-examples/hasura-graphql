@@ -2,6 +2,7 @@ services:
 - type: web
   name: hasura
   env: docker
+  autoDeploy: false
   healthCheckPath: /healthz
   envVars:
   - key: HASURA_GRAPHQL_DATABASE_URL
