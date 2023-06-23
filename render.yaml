@@ -5,7 +5,7 @@ services:
   autoDeploy: false
   healthCheckPath: /healthz
   envVars:
-  - key: HASURA_GRAPHQL_DATABASE_URL
+  - key: HASURA_GRAPHQL_METADATA_DATABASE_URL
     fromDatabase:
       name: hasura
       property: connectionString
